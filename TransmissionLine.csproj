@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Home\AppData\Local\Apps\2.0\477AE5HX.86E\PEE3MCH4.84B\tran..tion_127a55d62cc03faa_0003.0006_03fd5c6fef0309f2\TransmissionLine.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F0A764AF-99E2-4F27-B647-3D955E35890F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>TransmissionLine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <ApplicationVersion>3.6.3.5</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>TransmissionLine</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AmplifierClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AmplifierParameterUpdatedEventHandler.cs" />
+    <Compile Include="AmplifierParameterUpdatedEventArgs.cs" />
+    <Compile Include="clsComputerInfo.cs" />
+    <Compile Include="DriverClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverParameterUpdatedEventHandler.cs" />
+    <Compile Include="DriverParameterUpdatedEventArgs.cs" />
+    <Compile Include="Email.cs" />
+    <Compile Include="FilterClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterParameterUpdatedEventHandler.cs" />
+    <Compile Include="FilterParameterUpdatedEventArgs.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions.cs" />
+    <Compile Include="GeometryDisplayClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="myGraphClass.cs" />
+    <Compile Include="SettingsClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsParameterUpdatedEventHandler.cs" />
+    <Compile Include="SettingsParameterUpdatedEventArgs.cs" />
+    <Compile Include="SettingsUpdatedEventHandler.cs" />
+    <Compile Include="SettingsUpdatedEventArgs.cs" />
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Point3D.cs" />
+    <Compile Include="SettingsParameters.cs" />
+    <Compile Include="AmplifierParameters.cs" />
+    <Compile Include="FilterParameters.cs" />
+    <Compile Include="HighPassFilter.cs" />
+    <Compile Include="LowPassFilter.cs" />
+    <Compile Include="DriverParameters.cs" />
+    <Compile Include="DriverSetup.cs" />
+    <Compile Include="TLParameters.cs" />
+    <Compile Include="StraightPipe.cs" />
+    <Compile Include="TLElement.cs" />
+    <Compile Include="myGraph.cs" />
+    <Compile Include="GraphSeries.cs" />
+    <Compile Include="Series.cs" />
+    <Compile Include="Complex.cs" />
+    <Compile Include="TLParameterUpdatedEventHandler.cs" />
+    <Compile Include="TLParameterUpdatedEventArgs.cs" />
+    <Compile Include="UpdateInformationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VectorFunctions.cs" />
+    <Compile Include="My\MyApplication.cs" />
+    <Compile Include="My\MyComputer.cs" />
+    <Compile Include="My\MyProject.cs" />
+    <Compile Include="My\InternalXmlHelper.cs" />
+    <Compile Include="My\MySettings.cs" />
+    <Compile Include="My\MySettingsProperty.cs" />
+    <Compile Include="My\Resources\Resources.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx" />
+    <EmbeddedResource Include="AmplifierClass.resx" />
+    <EmbeddedResource Include="DriverClass.resx" />
+    <EmbeddedResource Include="FilterClass.resx" />
+    <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="GeometryDisplayClass.resx" />
+    <EmbeddedResource Include="Resources.resx" />
+    <EmbeddedResource Include="SettingsClass.resx" />
+    <EmbeddedResource Include="SplashScreen.resx" />
+    <EmbeddedResource Include="UpdateInformationDialog.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
